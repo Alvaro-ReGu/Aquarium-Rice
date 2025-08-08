@@ -1,0 +1,26 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["clock"],
+  "modules-center": [],
+  "modules-right": ["battery"],
+
+  "clock": {
+  	"interval": 60,
+  	"format": "{:%I:%M}",
+  	"tooltip": false
+   },
+
+  "battery": {
+    "bat": "BAT0",
+    "adapter": "ucsi_source_psy_USBC000o001",
+    "interval": 30,
+    "states": { "warning": 30, "critical": 15 },
+    "format": "{icon} {capacity}%",
+    "format-charging": "⚡ {capacity}%",
+    "format-plugged": "🔌 {capacity}%",
+    "tooltip": false
+  }
+}
+
+

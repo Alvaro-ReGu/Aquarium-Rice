@@ -1,0 +1,29 @@
+/* Fully transparent bar */
+#waybar {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* Bubble effect for clock and battery */
+#clock, #battery {
+    background-color: rgba(111, 204, 237, 0.3); /* light blue with 30% opacity */
+    border-radius: 12px;
+    padding: 6px 12px;
+    margin-top: 12px;
+    color: white;
+    border: 1px solid rgba(173, 216, 230, 0.5);
+    box-shadow: 5 5 10 1px #020e36;
+    font-size: 16px;
+    font-family: "DepartureMono Nerd Font Mono", monospace;
+}
+
+/* Optional extra spacing */
+#clock {
+    margin-left: 24px;
+}
+
+#battery {
+    margin-right: 24px;
+}
+
